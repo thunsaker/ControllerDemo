@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<div style="margin:10px;">
+    <h2>Index (Home Controller)</h2>
+    <div> 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+
+    <div style="margin:10px 0 0 0;">
+        <h3>Action Results</h3>
+        @Html.ActionLink("Index", "Index", "Monkey") (Monkey Controller)<br /><br />
+        @Html.ActionLink("Add Monkey", "Add", "Monkey") (Show Create Monkey Form)<br /><br />
+        @Html.ActionLink("Get Monkey", "Get", "Monkey", 
+            new { id = 1 }, null) (Return Json for Monkey with Id of 1)<br /><br />
+        @Html.ActionLink("Download a Monkey", "Download", "Monkey")<br /><br />
+
+        <h3>Filters</h3>
+        @Html.ActionLink("Only on Friday", "OnlyOnFriday", "Monkey")<br /><br />
+        @Html.ActionLink("Only on Tuesday", "OnlyOnTuesday", "Monkey")
+    </div>
+</div>
